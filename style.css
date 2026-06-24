@@ -47,6 +47,18 @@ body {
 .authors {
   color: var(--accent);
   font-size: 1.2rem;
+  margin: 0 0 8px;
+}
+
+.affiliations {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 0 0 4px;
+}
+
+.correspondence {
+  color: var(--muted);
+  font-size: 0.85rem;
   margin: 0 0 32px;
 }
 
@@ -72,6 +84,15 @@ body {
 
 .btn:hover {
   opacity: 0.8;
+}
+
+.btn-disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.btn-disabled em {
+  font-style: italic;
 }
 
 main {
