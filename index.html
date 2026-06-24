@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video2Reaction</title>
+<meta name="description" content="Video2Reaction: Unlocking the Potential of Forecasting Audience Reaction Distribution in the Wild from Video Only">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1 class="title"><span class="emoji">🎬</span> Video2Reaction</h1>
+    <h2 class="subtitle">Unlocking the Potential of Forecasting Audience Reaction Distribution in the Wild from Video Only</h2>
+    <p class="authors">Video2Reaction Team</p>
+
+    <div class="links">
+      <a class="btn" href="link pending" target="_blank" rel="noopener">
+        <span class="icon">📄</span> arXiv
+      </a>
+      <a class="btn" href="https://github.com/Information-Fusion-Lab-Umass/video2reaction" target="_blank" rel="noopener">
+        <span class="icon">💻</span> Code
+      </a>
+      <a class="btn" href="https://huggingface.co/datasets/video2reac/Video2Reaction" target="_blank" rel="noopener">
+        <span class="icon">📊</span> Dataset
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="visual">
+      <img src="assets/perceived_vs_induced.png" alt="Perceived vs induced emotion comparison" />
+    </section>
+
+    <section class="content">
+      <h2>Introduction</h2>
+      <p>
+        Understanding and forecasting audience reactions to video content are crucial for improving content
+        creation, recommendation systems, and media analysis. To enable audience reaction prediction and other
+        content engagement applications, we introduce <strong>Video2Reaction</strong>, a multimodal dataset that
+        maps short movie segments to a distribution of <em>induced emotions</em> of viewers in the wild, as
+        expressed through social media. <strong>Video2Reaction</strong> spans more than 10,000 videos and serves
+        as a reliable benchmark as well as a training resource for audience reaction prediction. To enable
+        cost-effective continuous annotations as reactions may change over time, we develop a two-stage
+        multi-agent pipeline using only open-source LLMs, achieving 86% correctness under blind human verification
+        despite the inherently noisy and subjective nature of the task. We establish the first benchmark for
+        video-to-reaction-distribution prediction in the wild and show that pretrained foundation video models
+        fail in zero-shot settings, while finetuning transforms them into state-of-the-art predictors capable of
+        modeling both full reaction distributions and dominant responses from video alone. However, the task
+        remains challenging: even the strongest methods achieve only 77% Top-3 F1 in dominant reaction prediction
+        (LLaVA-Next), highlighting a substantial gap in modeling collective audience reaction. Dataset and
+        annotation code will be released upon acceptance.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Project page for Video2Reaction.</p>
+  </footer>
+</body>
+</html>
